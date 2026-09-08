@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tokonomics">
+  <rect width="64" height="64" rx="8" fill="#07151b"/>
+  <path d="M13 16h25v7H29v25h-7V23h-9z" fill="#5ee9d1"/>
+  <path d="M43 14h7L36 50h-7z" fill="#ffbd59"/>
+</svg>
