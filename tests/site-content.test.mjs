@@ -32,3 +32,11 @@ test('preserves responsive and accessibility affordances', () => {
   assert.match(styles, /:focus-visible/);
   assert.match(page, /aria-label="Primary navigation"/);
 });
+
+test('presents the v8.0.0 release milestone and technical achievements', () => {
+  assert.match(page, /v8\.0\.0 GA/);
+  assert.match(page, /Phase 19 Certified/);
+  assert.match(page, /3x–4x/);
+  assert.match(page, /14 Languages/);
+  assert.match(page, /10\.85 ms/);
+});
