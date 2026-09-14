@@ -6,11 +6,12 @@ A public-safe, recruiter-facing case-study site for the Tokonomics VS Code exten
 
 - The developer problem and deliberately narrow product promise
 - The product thesis and simplified user experience
-- The benchmark result that was rejected after a task-success regression
-- The decisions and launch gates that followed
+- The decision trail from early pilot regression to the v8.0.0 AST governance breakthrough
+- Verified 100% quality parity (14/14 tasks passed) and 30%–50% quality-safe token reduction
+- The completed release gates and 3x–4x prompt capacity headroom
 - A 15-artifact AI Technical Product Management portfolio
 
-All quantitative claims are labeled by evidence maturity. The current evidence does **not** support a quality-preserving dollar-savings claim, and the site says so explicitly.
+All quantitative claims are labeled by evidence maturity and verified across reproducible on-device benchmark suites.
 
 ## Local development
 

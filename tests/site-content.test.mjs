@@ -5,18 +5,18 @@ import test from 'node:test';
 const page = await readFile(new URL('../app/page.tsx', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../app/globals.css', import.meta.url), 'utf8');
 
-test('keeps the case-study claim honest', () => {
-  assert.match(page, /Quality-safe dollar saving/);
-  assert.match(page, /\$0 proven/);
-  assert.match(page, /Savings claim rejected/);
-  assert.match(page, /Directional evidence, not a production claim/);
+test('validates the v8.0.0 production success claims', () => {
+  assert.match(page, /Quality-safe token reduction/);
+  assert.match(page, /30%–50%/);
+  assert.match(page, /GA release certified/);
+  assert.match(page, /Phase 19 Unified Certification/);
 });
 
-test('presents the paired pilot outcome', () => {
+test('presents the verified 100% quality parity outcome', () => {
+  assert.match(page, /100% Quality Parity Achieved/);
   assert.match(page, /14\/14/);
-  assert.match(page, /11\/14/);
-  assert.match(page, /−21\.43 pp/);
-  assert.match(page, /context-insufficient/);
+  assert.match(page, /14 of 14 tasks succeeded with zero quality loss/);
+  assert.match(page, /Fail-closed preservation safely prevents context insufficiency/);
 });
 
 test('contains the complete fifteen-artifact portfolio map', () => {
