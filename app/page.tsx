@@ -161,7 +161,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.0.0 GA</small>
+            <small>Product case file · v8.1.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -565,7 +565,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.0.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.1.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>
