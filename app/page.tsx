@@ -144,7 +144,7 @@ const decisions = [
     body: 'Replaced heuristic lossy compression with deterministic AST skeletonization across 14 languages and fail-closed evidence safety gates. Verified 100% quality parity on Phase 19 suites, unlocked 3x–4x prompt capacity headroom for subscription plans ($20/mo), and delivered 30%–50% direct token reductions for API teams with sub-15ms on-device retrieval.',
   },
   {
-    date: 'Scale (v8.5.0)',
+    date: 'Scale (v8.5.1)',
     title: 'Next-Gen FinOps Cockpit & 2D Pareto Efficiency Frontier',
     body: 'Shipped a persistent, responsive FinOps Cockpit with real-time token burn velocity, budget burn-rate projections, 16-stage pipeline telemetry, branch context drift detection, and an interactive 2D model frontier (Cost vs MMLU/Quality) to guide team model selection on real project economics.',
   },
@@ -167,7 +167,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.5.0 GA</small>
+            <small>Product case file · v8.5.1 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -184,7 +184,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.5.0 (v8.0.0 GA Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v8.5.1 (v8.0.0 GA Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -213,14 +213,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.5.0 GA (v8.0.0 Certified)</dd>
+              <dd>v8.5.1 GA (v8.0.0 Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.5.0</span>
+            <span>Unified Release Audit / v8.5.1</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -519,7 +519,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v8.5.0.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v8.5.1.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -594,7 +594,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.5.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.5.1</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>

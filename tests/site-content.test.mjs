@@ -41,8 +41,8 @@ test('presents the v8.0.0 release milestone and technical achievements', () => {
   assert.match(page, /10\.85 ms/);
 });
 
-test('presents the v8.5.0 Next-Gen Cockpit & FinOps governance achievements', () => {
-  assert.match(page, /v8\.5\.0/);
+test('presents the v8.5.1 Next-Gen Cockpit & FinOps governance achievements', () => {
+  assert.match(page, /v8\.5\.1/);
   assert.match(page, /Next-Gen FinOps Cockpit/);
   assert.match(page, /Pareto/);
   assert.match(page, /FinOps/i);
