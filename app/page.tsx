@@ -9,6 +9,7 @@ import {
   Compass,
   FileCheck2,
   FlaskConical,
+  Gauge,
   GitBranch,
   Layers3,
   LockKeyhole,
@@ -142,6 +143,11 @@ const decisions = [
     title: 'Achieve the deterministic governance breakthrough',
     body: 'Replaced heuristic lossy compression with deterministic AST skeletonization across 14 languages and fail-closed evidence safety gates. Verified 100% quality parity on Phase 19 suites, unlocked 3x–4x prompt capacity headroom for subscription plans ($20/mo), and delivered 30%–50% direct token reductions for API teams with sub-15ms on-device retrieval.',
   },
+  {
+    date: 'Scale (v8.5.0)',
+    title: 'Next-Gen FinOps Cockpit & 2D Pareto Efficiency Frontier',
+    body: 'Shipped a persistent, responsive FinOps Cockpit with real-time token burn velocity, budget burn-rate projections, 16-stage pipeline telemetry, branch context drift detection, and an interactive 2D model frontier (Cost vs MMLU/Quality) to guide team model selection on real project economics.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -161,7 +167,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.1.0 GA</small>
+            <small>Product case file · v8.5.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -178,7 +184,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.0.0 GA Release</SectionLabel>
+          <SectionLabel>AI technical product case study · v8.5.0 (v8.0.0 GA Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -207,14 +213,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.0.0 GA Release</dd>
+              <dd>v8.5.0 GA (v8.0.0 Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.0.0</span>
+            <span>Unified Release Audit / v8.5.0</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -240,7 +246,7 @@ export default function Home() {
             <Check size={20} aria-hidden="true" />
             <span>
               <small>Production release verdict</small>
-              GA release certified: 100% task quality parity with 3x–4x prompt headroom.
+              GA release certified: 100% task quality parity with 3x–4x prompt headroom & Next-Gen FinOps Cockpit.
             </span>
           </div>
           <p className="microcopy">
@@ -303,6 +309,11 @@ export default function Home() {
             <h3>Zero-leak privacy</h3>
             <p><strong>100% on-device local execution</strong> with sub-15ms hybrid retrieval (10.85ms benchmark) and zero unauthorized external egress.</p>
           </article>
+          <article>
+            <Gauge size={22} aria-hidden="true" />
+            <h3>Next-Gen FinOps Cockpit</h3>
+            <p><strong>Real-time 4-column sticky telemetry</strong> with 16-stage nanobar stepper, spatial treemap heatmaps, and git branch financial drift tracking.</p>
+          </article>
         </div>
       </section>
 
@@ -352,7 +363,7 @@ export default function Home() {
               <li><Check size={17} /> Workspace context (None, Selection, Automatic)</li>
               <li><Check size={17} /> Include unsaved changes (On/Off)</li>
               <li><Check size={17} /> Response reuse cache alignment (On/Off)</li>
-            </ul>
+              </ul>
             <p>Advanced behavior is governed by deterministic evidence safety, not a wall of complex configuration.</p>
           </div>
         </div>
@@ -372,6 +383,11 @@ export default function Home() {
             <span>03</span>
             <h3>Native multi-surface UX & live telemetry</h3>
             <p>Codex/Claude/Antigravity design aesthetic with live model-aware Thinking, Analyzing, and Working status indicators.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Full-cycle FinOps &amp; Pareto model frontier</h3>
+            <p>Real-time spend velocity forecasting (V_b), git branch PR financial drift pills, and 2D Pareto-optimal model selection.</p>
           </article>
         </div>
       </section>
@@ -443,6 +459,18 @@ export default function Home() {
                 <dt>Local hybrid retrieval latency</dt>
                 <dd>10.85 ms <span className="status success">zero-leak</span></dd>
               </div>
+              <div>
+                <dt>FinOps telemetry refresh</dt>
+                <dd>Event-driven <span className="status success">sub-1ms</span></dd>
+              </div>
+              <div>
+                <dt>Branch financial drift detection</dt>
+                <dd>Baseline vs PR delta <span className="status success">automated</span></dd>
+              </div>
+              <div>
+                <dt>Model Pareto frontier routing</dt>
+                <dd>2D latency vs cost <span className="status success">optimized</span></dd>
+              </div>
             </dl>
             <p>Every metric is independently verifiable across test suites and reproducible on-device benchmarks.</p>
           </div>
@@ -465,7 +493,7 @@ export default function Home() {
         <div className="section-intro light-intro">
           <div>
             <SectionLabel>04 / Decision trail</SectionLabel>
-            <h2>One project. Five consequential product decisions.</h2>
+            <h2>One project. Six consequential product decisions.</h2>
           </div>
           <p>
             The portfolio emphasizes judgment under uncertainty: how the problem
@@ -491,13 +519,14 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All four release gates verified for v8.0.0 GA.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v8.5.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
             <li><span>02</span><p><strong>Repeatable efficiency (Passed):</strong> 30%–50% token reduction and 3x–4x headroom across 14 languages and provider economics.</p></li>
             <li><span>03</span><p><strong>Safe fallback behavior (Passed):</strong> Fail-closed boundary guarantees 100% original content preservation when context sufficiency is uncertain.</p></li>
             <li><span>04</span><p><strong>User trust & privacy (Passed):</strong> 100% on-device local execution with zero external egress and sub-15ms retrieval.</p></li>
+            <li><span>05</span><p><strong>FinOps &amp; governance (Passed):</strong> Sticky KPI cockpit, 16-stage pipeline stepper, branch drift tracking, and Pareto model efficiency frontier certified.</p></li>
           </ul>
         </div>
       </section>
@@ -565,7 +594,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.1.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.5.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>
