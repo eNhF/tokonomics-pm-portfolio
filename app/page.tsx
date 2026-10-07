@@ -148,6 +148,11 @@ const decisions = [
     title: 'Next-Gen FinOps Cockpit & 2D Pareto Efficiency Frontier',
     body: 'Shipped a persistent, responsive FinOps Cockpit with real-time token burn velocity, budget burn-rate projections, 16-stage pipeline telemetry, branch context drift detection, and an interactive 2D model frontier (Cost vs MMLU/Quality) to guide team model selection on real project economics.',
   },
+  {
+    date: 'Validate (v8.5.3)',
+    title: 'Empirical proof on world-class open-source codebases',
+    body: 'Evaluated Tokonomics against 34,400+ canonical production tokens from Redux, Express, Axios, Fastify, React, and Flask. Verified 58.7% average token reduction (up to 89.3% on Express.js), 7.08ms on-device Tree-sitter WASM latency, +$60.61 saved per 1,000 prompts on Claude 3.7 Sonnet, and 100% AST contract preservation.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -167,7 +172,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.5.1 GA</small>
+            <small>Product case file · v8.5.3 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -184,7 +189,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.5.1 (v8.0.0 GA Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v8.5.3 GA (Enterprise & OSS Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -213,14 +218,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.5.1 GA (v8.0.0 Certified)</dd>
+              <dd>v8.5.3 GA (Enterprise Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.5.1</span>
+            <span>Unified Release Audit / v8.5.3 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -246,7 +251,7 @@ export default function Home() {
             <Check size={20} aria-hidden="true" />
             <span>
               <small>Production release verdict</small>
-              GA release certified: 100% task quality parity with 3x–4x prompt headroom & Next-Gen FinOps Cockpit.
+              GA release certified: 100% task quality parity, -58.7% OSS benchmark reduction, 3x–4x prompt headroom & Next-Gen FinOps Cockpit.
             </span>
           </div>
           <p className="microcopy">
@@ -258,6 +263,8 @@ export default function Home() {
       <div className="signal-strip" aria-label="Case study principles">
         <span><ShieldCheck size={16} /> 100% Local-only</span>
         <span><Scale size={16} /> Phase 19 Certified</span>
+        <span><Check size={16} /> -58.7% OSS Benchmark</span>
+        <span><Sparkles size={16} /> 7.08ms WASM Latency</span>
         <span><Zap size={16} /> 3x–4x Headroom</span>
         <span><LockKeyhole size={16} /> Zero-leak boundary</span>
         <span><Compass size={16} /> 14 Languages</span>
@@ -278,13 +285,13 @@ export default function Home() {
 
         <div className="problem-grid">
           <article className="problem-lead">
-            <span className="card-index">PRODUCT THESIS</span>
+            <span className="card-index">PRODUCT THESIS &amp; METRICS TAXONOMY</span>
             <h3>Efficiency only matters when the task still succeeds.</h3>
             <p>
               Tokonomics sits between developer intent and AI context assembly.
               By applying deterministic AST pruning, exact dependency preservation,
               and fail-closed evidence safety gates, it reduces context volume while
-              rigorously guaranteeing task quality.
+              rigorously guaranteeing downstream task quality.
             </p>
             <div className="thesis-equation" aria-label="North star equation">
               <span>successful tasks</span>
@@ -292,6 +299,21 @@ export default function Home() {
               <span>constrained resource</span>
               <b>=</b>
               <strong>north star</strong>
+            </div>
+            
+            <div className="faang-metrics-taxonomy" aria-label="FAANG Product Management Metrics Taxonomy">
+              <div className="metric-tier">
+                <span className="tier-badge l1">L1 NORTH STAR</span>
+                <p><strong>Task Completion per $10 Spend:</strong> Maximizing successfully resolved coding tasks within strict token &amp; subscription constraints.</p>
+              </div>
+              <div className="metric-tier">
+                <span className="tier-badge l2">L2 DRIVER METRICS</span>
+                <p><strong>-58.7%</strong> Context Payload Reduction · <strong>89%</strong> Prompt Cache Hit Rate · <strong>-1.8s</strong> TTFT Latency Reduction</p>
+              </div>
+              <div className="metric-tier">
+                <span className="tier-badge guard">GUARDRAIL METRICS</span>
+                <p><strong>100%</strong> Task Quality Parity (14/14) · <strong>&lt;15ms</strong> Local Compilation Budget (7.08ms) · <strong>0</strong> Plaintext Leaks</p>
+              </div>
             </div>
           </article>
           <article>
@@ -476,6 +498,122 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="oss-benchmark-board" aria-label="Open-source empirical benchmark findings">
+          <div className="oss-benchmark-head">
+            <div>
+              <span className="card-index">CANONICAL OPEN-SOURCE BENCHMARK</span>
+              <h3>Evaluated Across 6 World-Class Public Codebases</h3>
+            </div>
+            <div className="oss-kpi-pill">
+              <strong>-58.7%</strong>
+              <span>average context reduction</span>
+            </div>
+          </div>
+          <p className="oss-benchmark-deck">
+            Zero synthetic cherry-picking. Evaluated across 34,418 production tokens downloaded directly from official public repositories with 100% type, interface, and control-flow preservation at 7.08ms average on-device latency.
+          </p>
+
+          <div className="oss-table-container">
+            <table className="oss-table">
+              <thead>
+                <tr>
+                  <th>Repository</th>
+                  <th>Canonical File</th>
+                  <th>Language</th>
+                  <th>Raw Tokens</th>
+                  <th>Optimized (T1)</th>
+                  <th>Reduction</th>
+                  <th>Compile Latency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>reduxjs/redux</strong></td>
+                  <td><code>src/createStore.ts</code></td>
+                  <td>TypeScript</td>
+                  <td>4,186</td>
+                  <td>1,289</td>
+                  <td><span className="oss-pct">-69.2%</span></td>
+                  <td>12.1 ms</td>
+                </tr>
+                <tr>
+                  <td><strong>expressjs/express</strong></td>
+                  <td><code>lib/application.js</code></td>
+                  <td>JavaScript</td>
+                  <td>3,322</td>
+                  <td>356</td>
+                  <td><span className="oss-pct">-89.3%</span></td>
+                  <td>5.4 ms</td>
+                </tr>
+                <tr>
+                  <td><strong>axios/axios</strong></td>
+                  <td><code>lib/core/Axios.js</code></td>
+                  <td>JavaScript</td>
+                  <td>3,038</td>
+                  <td>451</td>
+                  <td><span className="oss-pct">-85.2%</span></td>
+                  <td>2.2 ms</td>
+                </tr>
+                <tr>
+                  <td><strong>fastify/fastify</strong></td>
+                  <td><code>lib/route.js</code></td>
+                  <td>JavaScript</td>
+                  <td>5,626</td>
+                  <td>1,418</td>
+                  <td><span className="oss-pct">-74.8%</span></td>
+                  <td>6.0 ms</td>
+                </tr>
+                <tr>
+                  <td><strong>facebook/react</strong></td>
+                  <td><code>packages/react/src/ReactHooks.js</code></td>
+                  <td>JavaScript</td>
+                  <td>2,699</td>
+                  <td>416</td>
+                  <td><span className="oss-pct">-84.6%</span></td>
+                  <td>4.1 ms</td>
+                </tr>
+                <tr>
+                  <td><strong>pallets/flask</strong></td>
+                  <td><code>src/flask/app.py</code></td>
+                  <td>Python</td>
+                  <td>15,547</td>
+                  <td>10,284</td>
+                  <td><span className="oss-pct">-33.9%</span></td>
+                  <td>12.7 ms</td>
+                </tr>
+                <tr className="oss-total-row">
+                  <td><strong>AGGREGATE BUNDLE</strong></td>
+                  <td><em>6 Iconic Titans</em></td>
+                  <td>Multi-Lang</td>
+                  <td><strong>34,418</strong></td>
+                  <td><strong>14,214</strong></td>
+                  <td><span className="oss-pct highlight">-58.7%</span></td>
+                  <td><strong>7.08 ms</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="oss-economics-strip">
+            <div>
+              <small>Claude 3.7 Sonnet ($3/M)</small>
+              <strong>+$60.61 saved / 1k prompts</strong>
+            </div>
+            <div>
+              <small>GPT-4o ($2.50/M)</small>
+              <strong>+$50.51 saved / 1k prompts</strong>
+            </div>
+            <div>
+              <small>On-Device WASM Engine</small>
+              <strong>7.08 ms average latency</strong>
+            </div>
+            <div>
+              <small>One-command verification</small>
+              <code>npm run benchmark:oss</code>
+            </div>
+          </div>
+        </div>
+
         <div className="evidence-callout">
           <FileCheck2 size={28} aria-hidden="true" />
           <div>
@@ -519,7 +657,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v8.5.1.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v8.5.3.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -594,7 +732,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.5.1</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.5.3</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>

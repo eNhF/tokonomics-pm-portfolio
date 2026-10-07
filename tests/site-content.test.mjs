@@ -47,3 +47,13 @@ test('presents the v8.5.1 Next-Gen Cockpit & FinOps governance achievements', ()
   assert.match(page, /Pareto/);
   assert.match(page, /FinOps/i);
 });
+
+test('presents the v8.5.3 empirical open-source benchmark and FAANG metrics taxonomy', () => {
+  assert.match(page, /v8\.5\.3/);
+  assert.match(page, /CANONICAL OPEN-SOURCE BENCHMARK/i);
+  assert.match(page, /reduxjs\/redux/);
+  assert.match(page, /expressjs\/express/);
+  assert.match(page, /faang-metrics-taxonomy/);
+  assert.match(page, /L1 NORTH STAR/);
+  assert.match(page, /GUARDRAIL METRICS/);
+});

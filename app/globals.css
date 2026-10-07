@@ -292,3 +292,193 @@ footer > div a { display: inline-flex; align-items: center; gap: 7px; color: #a8
 
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 4px; }
 ::selection { background: var(--cyan); color: var(--ink); }
+
+/* OSS Benchmark Board */
+.oss-benchmark-board {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.oss-benchmark-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.oss-benchmark-head h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+
+.oss-kpi-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgb(8 125 114 / 10%);
+  border: 1px solid var(--cyan-dark);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+}
+
+.oss-kpi-pill strong {
+  font-size: 1.4rem;
+  color: var(--cyan-dark);
+  line-height: 1;
+}
+
+.oss-kpi-pill span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.oss-benchmark-deck {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.oss-table-container {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.oss-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+}
+
+.oss-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  border-bottom: 2px solid var(--line);
+  color: var(--ink);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.oss-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.oss-table .oss-total-row td {
+  background: var(--paper-2);
+  border-top: 2px solid var(--ink);
+  font-weight: 700;
+}
+
+.oss-pct {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  background: rgb(8 125 114 / 12%);
+  color: var(--cyan-dark);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.oss-pct.highlight {
+  background: var(--cyan-dark);
+  color: var(--white);
+}
+
+.oss-economics-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.oss-economics-strip div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.oss-economics-strip small {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.oss-economics-strip strong {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .oss-benchmark-head { flex-direction: column; }
+  .oss-kpi-pill { align-items: flex-start; }
+  .oss-economics-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* FAANG PM Metrics Taxonomy */
+.faang-metrics-taxonomy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.metric-tier {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tier-badge {
+  display: inline-block;
+  width: fit-content;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius);
+}
+
+.tier-badge.l1 {
+  background: rgb(8 125 114 / 15%);
+  color: var(--cyan-dark);
+  border: 1px solid var(--cyan-dark);
+}
+
+.tier-badge.l2 {
+  background: rgb(255 189 89 / 18%);
+  color: #a86500;
+  border: 1px solid var(--amber);
+}
+
+.tier-badge.guard {
+  background: rgb(7 21 27 / 8%);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.metric-tier p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.metric-tier p strong {
+  color: var(--ink);
+}
