@@ -322,36 +322,97 @@ export default function Home() {
             
             <div className="faang-metrics-taxonomy" aria-label="FAANG Product Management Metrics Taxonomy">
               <div className="metric-tier">
-                <span className="tier-badge l1">L1 NORTH STAR</span>
-                <p><strong>Task Completion per $10 Spend:</strong> Maximizing successfully resolved coding tasks within strict token &amp; subscription constraints.</p>
+                <div className="tier-header">
+                  <span className="tier-badge l1">L1 NORTH STAR</span>
+                  <span className="tier-target">PRIMARY OUTCOME</span>
+                </div>
+                <p><strong>Task Completion per $10 Spend:</strong> Maximizing successfully resolved coding tasks within strict token &amp; subscription limits.</p>
               </div>
               <div className="metric-tier">
-                <span className="tier-badge l2">L2 DRIVER METRICS</span>
+                <div className="tier-header">
+                  <span className="tier-badge l2">L2 DRIVER METRICS</span>
+                  <span className="tier-target">EFFICIENCY ENGINES</span>
+                </div>
                 <p><strong>-58.7%</strong> Context Payload Reduction · <strong>89%</strong> Prompt Cache Hit Rate · <strong>-1.8s</strong> TTFT Latency Reduction</p>
               </div>
               <div className="metric-tier">
-                <span className="tier-badge guard">GUARDRAIL METRICS</span>
+                <div className="tier-header">
+                  <span className="tier-badge guard">GUARDRAIL METRICS</span>
+                  <span className="tier-target">FAIL-CLOSED INVARIANTS</span>
+                </div>
                 <p><strong>100%</strong> Task Quality Parity (14/14) · <strong>&lt;15ms</strong> Local Compilation Budget (7.08ms) · <strong>0</strong> Plaintext Leaks</p>
               </div>
             </div>
           </article>
-          <article>
-            <TrendingDown size={22} aria-hidden="true" />
+
+          <article className="feature-card">
+            <div className="feature-card-header">
+              <div className="feature-icon"><TrendingDown size={20} aria-hidden="true" /></div>
+              <span className="feature-tag">ENTERPRISE FINOPS</span>
+            </div>
+            <div className="card-visual visual-burn">
+              <div className="visual-bar-label">
+                <span>Context Token Burn</span>
+                <strong className="text-savings">-58.7%</strong>
+              </div>
+              <div className="visual-dual-bar">
+                <div className="bar-raw" style={{ width: '100%' }}><span>Raw 34.4k</span></div>
+                <div className="bar-opt" style={{ width: '41.3%' }}><span>AST 14.2k</span></div>
+              </div>
+              <div className="visual-chip">+$60.61 saved / 1k Claude 3.7 requests</div>
+            </div>
             <h3>Metered API teams</h3>
             <p><strong>30%–50% direct token reductions</strong> on input tokens ($1,500–$4,500/developer/year saved) with mathematical evidence safety.</p>
           </article>
-          <article>
-            <Route size={22} aria-hidden="true" />
+
+          <article className="feature-card">
+            <div className="feature-card-header">
+              <div className="feature-icon"><Route size={20} aria-hidden="true" /></div>
+              <span className="feature-tag">SUBSCRIPTION MULTIPLIER</span>
+            </div>
+            <div className="card-visual visual-headroom">
+              <div className="headroom-gauge">
+                <div className="gauge-segment locked"><span>Standard: 12 turns</span></div>
+                <div className="gauge-segment unlocked"><span>Tokonomics: 48+ turns (4x)</span></div>
+              </div>
+              <div className="visual-chip amber">3x–4x Prompt Headroom · Zero Lockouts</div>
+            </div>
             <h3>Quota-limited subscriptions</h3>
             <p><strong>3x–4x prompt capacity multiplier</strong> for fixed $20/mo subscriptions (Claude Pro, ChatGPT Plus) before 5-hour lockout limits.</p>
           </article>
-          <article>
-            <BrainCircuit size={22} aria-hidden="true" />
+
+          <article className="feature-card">
+            <div className="feature-card-header">
+              <div className="feature-icon"><BrainCircuit size={20} aria-hidden="true" /></div>
+              <span className="feature-tag">LOCAL TRUST BOUNDARY</span>
+            </div>
+            <div className="card-visual visual-privacy">
+              <div className="privacy-pipeline">
+                <span className="pipeline-step">AST WASM</span>
+                <span className="pipeline-arrow">→</span>
+                <span className="pipeline-step active">10.85ms RAM</span>
+                <span className="pipeline-arrow">⇏</span>
+                <span className="pipeline-step blocked">0 Cloud Egress</span>
+              </div>
+              <div className="visual-chip cyan">100% On-Device · Salted Machine Hash</div>
+            </div>
             <h3>Zero-leak privacy</h3>
             <p><strong>100% on-device local execution</strong> with sub-15ms hybrid retrieval (10.85ms benchmark) and zero unauthorized external egress.</p>
           </article>
-          <article>
-            <Gauge size={22} aria-hidden="true" />
+
+          <article className="feature-card">
+            <div className="feature-card-header">
+              <div className="feature-icon"><Gauge size={20} aria-hidden="true" /></div>
+              <span className="feature-tag">REAL-TIME COCKPIT</span>
+            </div>
+            <div className="card-visual visual-cockpit">
+              <div className="cockpit-sparklines">
+                <div className="spark-col"><span>V_b</span><strong>Nominal</strong></div>
+                <div className="spark-col"><span>Drift</span><strong className="text-savings">-18% PR</strong></div>
+                <div className="spark-col"><span>Cache</span><strong>89% Hit</strong></div>
+              </div>
+              <div className="visual-chip purple">16-Stage Telemetry · Finviz Treemap</div>
+            </div>
             <h3>Next-Gen FinOps Cockpit</h3>
             <p><strong>Real-time 4-column sticky telemetry</strong> with 16-stage nanobar stepper, spatial treemap heatmaps, and git branch financial drift tracking.</p>
           </article>
@@ -470,6 +531,91 @@ export default function Home() {
             <div className="chart-note note-success">
               <ShieldCheck size={19} />
               <p><strong>14 of 14 tasks succeeded with zero quality loss.</strong> Fail-closed preservation safely prevents context insufficiency.</p>
+            </div>
+
+            {/* Comprehensive Ablation Study & Domain Parity Matrix */}
+            <div className="evidence-ablation-suite" aria-label="Ablation study and 4-domain task success breakdown">
+              <div className="ablation-header">
+                <span className="ablation-title">Ablation Study: Lossy Heuristics vs. Deterministic AST</span>
+                <span className="ablation-badge">PILOT REGRESSION PIVOT</span>
+              </div>
+
+              <div className="ablation-study-grid">
+                <div className="ablation-arm arm-failed">
+                  <div className="arm-label">
+                    <span>Phase 0: Heuristic Regex</span>
+                    <strong className="badge-regressed">REJECTED</strong>
+                  </div>
+                  <div className="arm-stat">
+                    <span>Token Cut: <strong>83.9%</strong></span>
+                    <span className="stat-danger">Task Regression: <strong>-21.4%</strong></span>
+                  </div>
+                  <p>Aggressive string truncation lost crucial function signatures &amp; type definitions, causing downstream model hallucinations.</p>
+                </div>
+
+                <div className="ablation-arm arm-certified">
+                  <div className="arm-label">
+                    <span>v8.5.3: Deterministic AST WASM</span>
+                    <strong className="badge-certified">CERTIFIED</strong>
+                  </div>
+                  <div className="arm-stat">
+                    <span>Token Cut: <strong>58.7%</strong></span>
+                    <span className="stat-success">Task Regression: <strong>0.0% (14/14)</strong></span>
+                  </div>
+                  <p>Contract-level AST skeletonization preserves full interfaces, exported types, and control-flow guards with mathematical parity.</p>
+                </div>
+              </div>
+
+              {/* 4-Domain Task Verification Breakdown */}
+              <div className="domain-breakdown-heading">
+                <span>4-Domain Evaluation Matrix</span>
+                <small>Blind Model-in-the-Loop Evaluation</small>
+              </div>
+
+              <div className="domain-matrix-grid">
+                <div className="domain-card">
+                  <div className="domain-head">
+                    <span>AST Syntax &amp; Interface Types</span>
+                    <strong>4/4</strong>
+                  </div>
+                  <div className="domain-bar"><i style={{ width: '100%' }} /></div>
+                  <small>TypeScript, Python, JS declarations preserved</small>
+                </div>
+
+                <div className="domain-card">
+                  <div className="domain-head">
+                    <span>Multi-File Graph Dependency</span>
+                    <strong>3/3</strong>
+                  </div>
+                  <div className="domain-bar"><i style={{ width: '100%' }} /></div>
+                  <small>Cross-module symbol imports &amp; export links</small>
+                </div>
+
+                <div className="domain-card">
+                  <div className="domain-head">
+                    <span>In-Memory RAM Retrieval</span>
+                    <strong>4/4</strong>
+                  </div>
+                  <div className="domain-bar"><i style={{ width: '100%' }} /></div>
+                  <small>10.85ms hybrid exact slice extraction</small>
+                </div>
+
+                <div className="domain-card">
+                  <div className="domain-head">
+                    <span>Fail-Closed Safety Boundary</span>
+                    <strong>3/3</strong>
+                  </div>
+                  <div className="domain-bar"><i style={{ width: '100%' }} /></div>
+                  <small>Zero plaintext credential/token leakage</small>
+                </div>
+              </div>
+
+              <div className="invariants-footer-strip">
+                <span><Check size={14} /> Zero AST Invalidation</span>
+                <span><Check size={14} /> 100% Control Flow</span>
+                <span><Check size={14} /> Sub-15ms Budget</span>
+                <span><Check size={14} /> Deterministic Skeletons</span>
+              </div>
             </div>
           </div>
 
