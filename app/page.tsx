@@ -260,6 +260,25 @@ export default function Home() {
         </aside>
       </section>
 
+      <section className="executive-summary-strip" aria-label="Executive case study summary">
+        <div className="summary-col">
+          <small>01 / Strategic Thesis</small>
+          <p>Local-first context compiler transforming raw codebase dumps into lean AST skeletons with fail-closed evidence safety.</p>
+        </div>
+        <div className="summary-col">
+          <small>02 / Quantified Moat</small>
+          <p><strong>-58.7%</strong> average reduction on iconic repos (up to <strong>-89.3%</strong>), <strong>100%</strong> task parity, <strong>7.08ms</strong> WASM latency.</p>
+        </div>
+        <div className="summary-col">
+          <small>03 / Business Model</small>
+          <p>Enterprise AI FinOps ($1,500–$4,500/dev/yr saved), branch context drift gates, and 3x–4x subscription prompt multipliers.</p>
+        </div>
+        <div className="summary-col">
+          <small>04 / Intellectual Honesty</small>
+          <p>Stopped early launch after detecting a 21.4% quality drop; pivoted to deterministic AST governance with verifiable test suites.</p>
+        </div>
+      </section>
+
       <div className="signal-strip" aria-label="Case study principles">
         <span><ShieldCheck size={16} /> 100% Local-only</span>
         <span><Scale size={16} /> Phase 19 Certified</span>
@@ -617,7 +636,7 @@ export default function Home() {
         <div className="evidence-callout">
           <FileCheck2 size={28} aria-hidden="true" />
           <div>
-            <span>The v8.0.0 outcome</span>
+            <span>The v8.5.3 outcome</span>
             <h3>The north star became successful tasks per constrained resource.</h3>
           </div>
           <p>
@@ -631,7 +650,7 @@ export default function Home() {
         <div className="section-intro light-intro">
           <div>
             <SectionLabel>04 / Decision trail</SectionLabel>
-            <h2>One project. Six consequential product decisions.</h2>
+            <h2>One project. Eight consequential product decisions.</h2>
           </div>
           <p>
             The portfolio emphasizes judgment under uncertainty: how the problem
@@ -716,7 +735,7 @@ export default function Home() {
               the thesis was vindicated through deterministic context governance,
               delivering genuine developer utility and measurable efficiency.
             </p>
-            <p className="about-name">eNhF <span>· Aspiring AI Technical Product Manager</span></p>
+            <p className="about-name">eNhF <span>· Technical Product Manager (AI Developer Platforms & FinOps)</span></p>
           </div>
           <div className="competency-grid" aria-label="Product management competencies">
             <span><Target size={17} />Product strategy</span>
