@@ -57,3 +57,11 @@ test('presents the v8.5.3 empirical open-source benchmark and FAANG metrics taxo
   assert.match(page, /L1 NORTH STAR/);
   assert.match(page, /GUARDRAIL METRICS/);
 });
+
+test('presents the v8.6.0 Model Context Protocol Tool Firewall and Community Benchmarks', () => {
+  assert.match(page, /v8\.6\.0/);
+  assert.match(page, /Model Context Protocol/);
+  assert.match(page, /tokonomics_request_tool_catalog/);
+  assert.match(page, /55 tools/);
+});
+

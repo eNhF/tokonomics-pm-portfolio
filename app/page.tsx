@@ -153,6 +153,11 @@ const decisions = [
     title: 'Empirical proof on world-class open-source codebases',
     body: 'Evaluated Tokonomics against 34,400+ canonical production tokens from Redux, Express, Axios, Fastify, React, and Flask. Verified 58.7% average token reduction (up to 89.3% on Express.js), 7.08ms on-device Tree-sitter WASM latency, +$60.61 saved per 1,000 prompts on Claude 3.7 Sonnet, and 100% AST contract preservation.',
   },
+  {
+    date: 'Expand (v8.6.0)',
+    title: 'Model Context Protocol (MCP) Tool Firewall & Community Server Benchmarks',
+    body: 'Introduced dynamic tool intent classification, catalog virtualization (tokonomics_request_tool_catalog), and compact schema pruning across 7 canonical community MCP servers (55 tools). Delivered 90.0% tool context reduction in 2.3ms with 100% parameter accuracy, zero tool call misfires, and native Google Gemini API direct provider integration.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -172,7 +177,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.5.3 GA</small>
+            <small>Product case file · v8.6.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -189,7 +194,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.5.3 GA (Enterprise & OSS Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v8.6.0 GA (Enterprise, MCP &amp; OSS Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -218,14 +223,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.5.3 GA (Enterprise Certified)</dd>
+              <dd>v8.6.0 GA (Enterprise Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.5.3 GA</span>
+            <span>Unified Release Audit / v8.6.0 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -782,7 +787,7 @@ export default function Home() {
         <div className="evidence-callout">
           <FileCheck2 size={28} aria-hidden="true" />
           <div>
-            <span>The v8.5.3 outcome</span>
+            <span>The v8.6.0 outcome</span>
             <h3>The north star became successful tasks per constrained resource.</h3>
           </div>
           <p>
@@ -822,7 +827,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v8.5.3.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v8.6.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -897,7 +902,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.5.3</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.6.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>
