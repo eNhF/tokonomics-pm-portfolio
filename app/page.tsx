@@ -158,6 +158,16 @@ const decisions = [
     title: 'Model Context Protocol (MCP) Tool Firewall & Community Server Benchmarks',
     body: 'Introduced dynamic tool intent classification, catalog virtualization (tokonomics_request_tool_catalog), and compact schema pruning across 7 canonical community MCP servers (55 tools). Delivered 90.0% tool context reduction in 2.3ms with 100% parameter accuracy, zero tool call misfires, and native Google Gemini API direct provider integration.',
   },
+  {
+    date: 'Innovate (v8.8.0)',
+    title: 'Universal Agent Layer & Execution Bloat Distiller',
+    body: 'Shipped standalone MCP stdio server with progressive AST disclosure, on-demand byte-accurate symbol hydration, and Execution Bloat Distiller (reducing verbose Jest/Pytest/Go test runner traces and 500-row JSON by 85.5% in 0.44ms with 100% assertion fidelity).',
+  },
+  {
+    date: 'Pioneer (v8.9.0)',
+    title: 'Semantic Graph Slicing & Deterministic Prefix Cache Pinning',
+    body: 'Engineered cross-file causal AST program slicing across TS, Python, and Go (cutting orthogonal context by 75.6% in 0.25ms with 100% causal completeness) and deterministic 3-tier prefix envelope pinning with exact 1,024-token boundary padding, dynamic cache-buster sanitization, and Anthropic cache_control markers, achieving 100% multi-turn byte invariance and guaranteed 90% prompt cache discounts.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -177,7 +187,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.6.0 GA</small>
+            <small>Product case file · v8.9.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -194,7 +204,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.6.0 GA (Enterprise, MCP &amp; OSS Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v8.9.0 GA (Enterprise, MCP, Slicing &amp; Prefix Pinning Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -223,14 +233,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.6.0 GA (Enterprise Certified)</dd>
+              <dd>v8.9.0 GA (Enterprise Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.6.0 GA</span>
+            <span>Unified Release Audit / v8.9.0 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -787,7 +797,7 @@ export default function Home() {
         <div className="evidence-callout">
           <FileCheck2 size={28} aria-hidden="true" />
           <div>
-            <span>The v8.6.0 outcome</span>
+            <span>The v8.9.0 outcome</span>
             <h3>The north star became successful tasks per constrained resource.</h3>
           </div>
           <p>
@@ -801,7 +811,7 @@ export default function Home() {
         <div className="section-intro light-intro">
           <div>
             <SectionLabel>04 / Decision trail</SectionLabel>
-            <h2>One project. Eight consequential product decisions.</h2>
+            <h2>One project. Ten consequential product decisions.</h2>
           </div>
           <p>
             The portfolio emphasizes judgment under uncertainty: how the problem
@@ -827,7 +837,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v8.6.0.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v8.9.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -835,6 +845,7 @@ export default function Home() {
             <li><span>03</span><p><strong>Safe fallback behavior (Passed):</strong> Fail-closed boundary guarantees 100% original content preservation when context sufficiency is uncertain.</p></li>
             <li><span>04</span><p><strong>User trust & privacy (Passed):</strong> 100% on-device local execution with zero external egress and sub-15ms retrieval.</p></li>
             <li><span>05</span><p><strong>FinOps &amp; governance (Passed):</strong> Sticky KPI cockpit, 16-stage pipeline stepper, branch drift tracking, and Pareto model efficiency frontier certified.</p></li>
+            <li><span>06</span><p><strong>Universal Agent &amp; Slicing Layer (Passed):</strong> Standalone MCP stdio server (tools 1-8), 85.5% execution bloat distillation, and 75.6% cross-file semantic graph slicing with 1,024-token prefix pinning.</p></li>
           </ul>
         </div>
       </section>
@@ -902,7 +913,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.6.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v8.9.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>

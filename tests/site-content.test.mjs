@@ -65,3 +65,18 @@ test('presents the v8.6.0 Model Context Protocol Tool Firewall and Community Ben
   assert.match(page, /55 tools/);
 });
 
+test('presents the v8.8.0 Universal Agent Layer & Execution Bloat Distiller achievements', () => {
+  assert.match(page, /v8\.8\.0/);
+  assert.match(page, /Universal Agent Layer & Execution Bloat Distiller/);
+  assert.match(page, /Execution Bloat Distiller/);
+  assert.match(page, /85\.5%/);
+});
+
+test('presents the v8.9.0 Semantic Graph Slicing & Prefix Cache Pinning achievements', () => {
+  assert.match(page, /v8\.9\.0/);
+  assert.match(page, /Semantic Graph Slicing & Deterministic Prefix Cache Pinning/);
+  assert.match(page, /1,024-token boundary padding/);
+  assert.match(page, /75\.6%/);
+  assert.match(page, /v8\.9\.0 GA/);
+});
+
