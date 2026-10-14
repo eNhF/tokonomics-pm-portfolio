@@ -168,6 +168,11 @@ const decisions = [
     title: 'Semantic Graph Slicing & Deterministic Prefix Cache Pinning',
     body: 'Engineered cross-file causal AST program slicing across TS, Python, and Go (cutting orthogonal context by 75.6% in 0.25ms with 100% causal completeness) and deterministic 3-tier prefix envelope pinning with exact 1,024-token boundary padding, dynamic cache-buster sanitization, and Anthropic cache_control markers, achieving 100% multi-turn byte invariance and guaranteed 90% prompt cache discounts.',
   },
+  {
+    date: 'Breakthrough (v9.0.0)',
+    title: 'Developer Velocity, Code Origin Engine & Air-Gapped Local DORA',
+    body: 'Integrated local-first developer activity tracking (2-min heartbeats with 120s auto-pause), real-time Code Origin classification (human typing dynamics vs streaming AI completions), flow state friction index (20m+ deep work sessions), and inner-loop DORA metrics directly from local Git history—certified 100% air-gapped with zero outbound network egress.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -187,7 +192,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v8.9.0 GA</small>
+            <small>Product case file · v9.0.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -204,7 +209,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v8.9.0 GA (Enterprise, MCP, Slicing &amp; Prefix Pinning Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v9.0.0 GA (Developer Velocity, Local DORA &amp; Slicing Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -233,14 +238,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v8.9.0 GA (Enterprise Certified)</dd>
+              <dd>v9.0.0 GA (Enterprise Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v8.9.0 GA</span>
+            <span>Unified Release Audit / v9.0.0 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -837,7 +842,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v8.9.0.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v9.0.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -846,6 +851,7 @@ export default function Home() {
             <li><span>04</span><p><strong>User trust & privacy (Passed):</strong> 100% on-device local execution with zero external egress and sub-15ms retrieval.</p></li>
             <li><span>05</span><p><strong>FinOps &amp; governance (Passed):</strong> Sticky KPI cockpit, 16-stage pipeline stepper, branch drift tracking, and Pareto model efficiency frontier certified.</p></li>
             <li><span>06</span><p><strong>Universal Agent &amp; Slicing Layer (Passed):</strong> Standalone MCP stdio server (tools 1-8), 85.5% execution bloat distillation, and 75.6% cross-file semantic graph slicing with 1,024-token prefix pinning.</p></li>
+            <li><span>07</span><p><strong>Developer Velocity &amp; Local DORA (Passed):</strong> 100% air-gapped keystroke and code origin telemetry, flow state friction analysis, and tamper-proof SHA-256 local DORA verification stamps.</p></li>
           </ul>
         </div>
       </section>
@@ -913,7 +919,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v8.9.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v9.0.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>

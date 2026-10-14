@@ -77,6 +77,12 @@ test('presents the v8.9.0 Semantic Graph Slicing & Prefix Cache Pinning achievem
   assert.match(page, /Semantic Graph Slicing & Deterministic Prefix Cache Pinning/);
   assert.match(page, /1,024-token boundary padding/);
   assert.match(page, /75\.6%/);
-  assert.match(page, /v8\.9\.0 GA/);
+});
+
+test('presents the v9.0.0 Developer Velocity & Air-Gapped Local DORA achievements', () => {
+  assert.match(page, /v9\.0\.0/);
+  assert.match(page, /Developer Velocity, Code Origin Engine & Air-Gapped Local DORA/);
+  assert.match(page, /100% air-gapped with zero outbound network egress/);
+  assert.match(page, /v9\.0\.0 GA/);
 });
 
