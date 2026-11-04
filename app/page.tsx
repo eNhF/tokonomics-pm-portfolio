@@ -173,6 +173,11 @@ const decisions = [
     title: 'Developer Velocity, Code Origin Engine & Air-Gapped Local DORA',
     body: 'Integrated local-first developer activity tracking (2-min heartbeats with 120s auto-pause), real-time Code Origin classification (human typing dynamics vs streaming AI completions), flow state friction index (20m+ deep work sessions), and inner-loop DORA metrics directly from local Git history—certified 100% air-gapped with zero outbound network egress.',
   },
+  {
+    date: 'Autonomous Substrate (v10.0.0)',
+    title: 'AI Harness Engineering, Closed-Loop Runtime & Two-Tier Rollback',
+    body: 'Shipped closed-loop autonomous execution substrate with stateful FSM (Planning -> Guardrail -> Acting -> Observing -> Convergence/Rollback), outbound MCP client hub with schema minification (-35.3%), 4-tier cache pinning with Anthropic ephemeral breakpoints ($0.30/M read rate), in-place compiler log surgery (-82.6%), progressive AST skeleton demotion (-46.7%), structural diff and Bash AST guardrails, and two-tier instant rollback preserving uncommitted editor buffers.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -192,7 +197,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v9.0.0 GA</small>
+            <small>Product case file · v10.0.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -209,7 +214,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v9.0.0 GA (Developer Velocity, Local DORA &amp; Slicing Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v10.0.0 GA (Autonomous Execution &amp; Harness Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -238,14 +243,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v9.0.0 GA (Enterprise Certified)</dd>
+              <dd>v10.0.0 GA (Autonomous Substrate Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v9.0.0 GA</span>
+            <span>Unified Release Audit / v10.0.0 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -842,7 +847,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v9.0.0.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v10.0.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -852,6 +857,7 @@ export default function Home() {
             <li><span>05</span><p><strong>FinOps &amp; governance (Passed):</strong> Sticky KPI cockpit, 16-stage pipeline stepper, branch drift tracking, and Pareto model efficiency frontier certified.</p></li>
             <li><span>06</span><p><strong>Universal Agent &amp; Slicing Layer (Passed):</strong> Standalone MCP stdio server (tools 1-8), 85.5% execution bloat distillation, and 75.6% cross-file semantic graph slicing with 1,024-token prefix pinning.</p></li>
             <li><span>07</span><p><strong>Developer Velocity &amp; Local DORA (Passed):</strong> 100% air-gapped keystroke and code origin telemetry, flow state friction analysis, and tamper-proof SHA-256 local DORA verification stamps.</p></li>
+            <li><span>08</span><p><strong>AI Harness Engineering &amp; Execution Substrate (Passed):</strong> Closed-loop FSM, outbound MCP client hub (-35.3%), 4-tier cache pinning with Anthropic ephemeral breakpoints ($0.30/M), in-place compiler log surgery (-82.6%), AST guardrails, and two-tier rollback.</p></li>
           </ul>
         </div>
       </section>
@@ -919,7 +925,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v9.0.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v10.0.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>

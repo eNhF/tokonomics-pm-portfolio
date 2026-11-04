@@ -83,6 +83,13 @@ test('presents the v9.0.0 Developer Velocity & Air-Gapped Local DORA achievement
   assert.match(page, /v9\.0\.0/);
   assert.match(page, /Developer Velocity, Code Origin Engine & Air-Gapped Local DORA/);
   assert.match(page, /100% air-gapped with zero outbound network egress/);
-  assert.match(page, /v9\.0\.0 GA/);
+});
+
+test('presents the v10.0.0 AI Harness Engineering & Autonomous Execution achievements', () => {
+  assert.match(page, /v10\.0\.0/);
+  assert.match(page, /AI Harness Engineering, Closed-Loop Runtime & Two-Tier Rollback/);
+  assert.match(page, /v10\.0\.0 GA/);
+  assert.match(page, /Autonomous Execution &amp; Harness Certified/);
+  assert.match(page, /All release gates verified for v8\.0\.0 GA through v10\.0\.0/);
 });
 
