@@ -6,10 +6,10 @@ A public-safe, recruiter-facing case-study site for the Tokonomics VS Code exten
 
 - The developer problem and deliberately narrow product promise
 - The product thesis and simplified user experience
-- The decision trail from early pilot regression to the v8.0.0 AST governance breakthrough, v9.0.0 Local DORA, and v10.0.0 Autonomous Execution Harness
+- The decision trail from early pilot regression to the v8.0.0 AST governance breakthrough, v9.0.0 Local DORA, v10.0.0 Autonomous Execution Harness, and v11.0.0 Frontier Substrate
 - Verified 100% quality parity (14/14 tasks passed) and 30%–50% quality-safe token reduction
 - The completed release gates and 3x–4x prompt capacity headroom
-- Closed-loop autonomous execution runtime, outbound MCP client hub, and two-tier rollback
+- Closed-loop autonomous execution runtime, outbound MCP client hub, two-tier rollback, and hardware chunk quantization with PDG slicing
 - A 15-artifact AI Technical Product Management portfolio
 
 All quantitative claims are labeled by evidence maturity and verified across reproducible on-device benchmark suites.

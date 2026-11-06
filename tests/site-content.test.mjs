@@ -88,8 +88,14 @@ test('presents the v9.0.0 Developer Velocity & Air-Gapped Local DORA achievement
 test('presents the v10.0.0 AI Harness Engineering & Autonomous Execution achievements', () => {
   assert.match(page, /v10\.0\.0/);
   assert.match(page, /AI Harness Engineering, Closed-Loop Runtime & Two-Tier Rollback/);
-  assert.match(page, /v10\.0\.0 GA/);
-  assert.match(page, /Autonomous Execution &amp; Harness Certified/);
-  assert.match(page, /All release gates verified for v8\.0\.0 GA through v10\.0\.0/);
+});
+
+test('presents the v11.0.0 Frontier Substrate and SOTA Context Engineering achievements', () => {
+  assert.match(page, /v11\.0\.0/);
+  assert.match(page, /Frontier Substrate, Multi-Provider Cache Quantization & Agentless Execution/);
+  assert.match(page, /v11\.0\.0 GA/);
+  assert.match(page, /Frontier Substrate Certified/);
+  assert.match(page, /All release gates verified for v8\.0\.0 GA through v11\.0\.0/);
+  assert.match(page, /Frontier Substrate &amp; SOTA Context Engineering/);
 });
 

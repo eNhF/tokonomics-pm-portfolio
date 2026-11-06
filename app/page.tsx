@@ -178,6 +178,11 @@ const decisions = [
     title: 'AI Harness Engineering, Closed-Loop Runtime & Two-Tier Rollback',
     body: 'Shipped closed-loop autonomous execution substrate with stateful FSM (Planning -> Guardrail -> Acting -> Observing -> Convergence/Rollback), outbound MCP client hub with schema minification (-35.3%), 4-tier cache pinning with Anthropic ephemeral breakpoints ($0.30/M read rate), in-place compiler log surgery (-82.6%), progressive AST skeleton demotion (-46.7%), structural diff and Bash AST guardrails, and two-tier instant rollback preserving uncommitted editor buffers.',
   },
+  {
+    date: 'Frontier Substrate (v11.0.0)',
+    title: 'Frontier Substrate, Multi-Provider Cache Quantization & Agentless Execution',
+    body: 'Shipped v11.0.0 Frontier Substrate featuring hardware-level chunk quantization across Anthropic (1,024-tok), DeepSeek (64-tok), OpenAI (128-tok), and Gemini (32k min target), Merkle topological prefix sorting (0% drift across 1,000 turns), Predictive Tool-RAG (clamping schemas to <=240 tokens, -77.1% bloat), Weiser inter-procedural backward PDG slicing (57.9%-75.6% reduction with 100% causal closure), and agentless 3-phase execution with symbolic test slicing accelerating test loops by 96.6%.',
+  },
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -197,7 +202,7 @@ export default function Home() {
           <span className="brand-mark">T/</span>
           <span>
             Tokonomics
-            <small>Product case file · v10.0.0 GA</small>
+            <small>Product case file · v11.0.0 GA</small>
           </span>
         </a>
         <nav aria-label="Primary navigation">
@@ -214,7 +219,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-grid" />
         <div className="hero-copy">
-          <SectionLabel>AI technical product case study · v10.0.0 GA (Autonomous Execution &amp; Harness Certified)</SectionLabel>
+          <SectionLabel>AI technical product case study · v11.0.0 GA (Frontier Substrate Certified)</SectionLabel>
           <h1>
             Optimize the <em>successful task</em>, not just the prompt.
           </h1>
@@ -243,14 +248,14 @@ export default function Home() {
             </div>
             <div>
               <dt>Status</dt>
-              <dd>v10.0.0 GA (Autonomous Substrate Certified)</dd>
+              <dd>v11.0.0 GA (Frontier Substrate Certified)</dd>
             </div>
           </dl>
         </div>
 
         <aside className="decision-card" aria-label="Key product verification">
           <div className="decision-card-head">
-            <span>Unified Release Audit / v10.0.0 GA</span>
+            <span>Unified Release Audit / v11.0.0 GA</span>
             <ShieldCheck size={18} aria-hidden="true" />
           </div>
           <p className="decision-question">
@@ -847,7 +852,7 @@ export default function Home() {
         <div className="gate-card">
           <div>
             <SectionLabel>Launch verification</SectionLabel>
-            <h2>All release gates verified for v8.0.0 GA through v10.0.0.</h2>
+            <h2>All release gates verified for v8.0.0 GA through v11.0.0.</h2>
           </div>
           <ul>
             <li><span>01</span><p><strong>Quality parity (Passed):</strong> 100% task success (14/14) on representative, blinded development tasks (Phase 19 certified).</p></li>
@@ -858,6 +863,7 @@ export default function Home() {
             <li><span>06</span><p><strong>Universal Agent &amp; Slicing Layer (Passed):</strong> Standalone MCP stdio server (tools 1-8), 85.5% execution bloat distillation, and 75.6% cross-file semantic graph slicing with 1,024-token prefix pinning.</p></li>
             <li><span>07</span><p><strong>Developer Velocity &amp; Local DORA (Passed):</strong> 100% air-gapped keystroke and code origin telemetry, flow state friction analysis, and tamper-proof SHA-256 local DORA verification stamps.</p></li>
             <li><span>08</span><p><strong>AI Harness Engineering &amp; Execution Substrate (Passed):</strong> Closed-loop FSM, outbound MCP client hub (-35.3%), 4-tier cache pinning with Anthropic ephemeral breakpoints ($0.30/M), in-place compiler log surgery (-82.6%), AST guardrails, and two-tier rollback.</p></li>
+            <li><span>09</span><p><strong>Frontier Substrate &amp; SOTA Context Engineering (Passed):</strong> Universal hardware cache quantization (DeepSeek/Anthropic/OpenAI/Gemini), Merkle prefix sorter (0% drift), Predictive Tool-RAG (&le;240 tok), inter-procedural PDG slicing (100% causal closure), symbolic test slicing (-96.6% latency), and agentless execution.</p></li>
           </ul>
         </div>
       </section>
@@ -925,7 +931,7 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top">
           <span className="brand-mark">T/</span>
-          <span>Tokonomics <small>Product portfolio · v10.0.0</small></span>
+          <span>Tokonomics <small>Product portfolio · v11.0.0</small></span>
         </a>
         <p>Built as an evidence-led AI product management case study.</p>
         <div>
